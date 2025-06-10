@@ -1,0 +1,33 @@
+
+/* Animations */
+@keyframes icon-slide {
+	0% {
+		transform: translateY(400%);
+		opacity: .05;
+	}
+
+    50% {
+        opacity: .25;
+    }
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes icon-slide-left {
+	0% {
+		transform: translateX(300%);
+		opacity: .05;
+	}
+
+    50% {
+        opacity: .25;
+    }
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

@@ -8,7 +8,7 @@
 }
 
 .navbar.sticky {
-	background-color: white;
+	background-color: #F6F8FA;
 	transition: ease-in-out 0.5s;
 }
 
@@ -57,14 +57,14 @@
 .nav-link a {
 	color: #6a7988;
 	margin-right: auto;
-	font-family: "Lato", sans-serif;
-	font-weight: 600;
-	font-size: 17px;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
 }
 .nav-link a.selected {
 	color: #3379ff;
 	margin-right: auto;
-	font-family: "Lato", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-weight: 600;
 }
 
@@ -73,10 +73,7 @@
 }
 
 .head {
-	background:
-	linear-gradient(175deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 100%),
-	linear-gradient(124deg, rgba(255, 255, 255, 0) 73%, rgba(238, 242, 246, 0.8) 30%, rgba(238, 242, 246, 0.5) 100%),
-	linear-gradient(353deg, rgba(255, 255, 255, 1) 30%, rgba(242, 242, 242, 0.5) 30%, rgba(242, 242, 242, 1) 100%);
+	background-image: url(../assets/bg/background-top.svg);
 	padding: 150px;
 }
 
@@ -123,7 +120,14 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 75px;
-	animation: icon-slide 400ms ease-in;
+}
+
+.slide-up {
+	animation: icon-slide 600ms ease-in-out;
+}
+
+.slide-left {
+	animation: icon-slide-left 600ms ease-in-out;
 }
 
 .icon-grid .logo-bg,
@@ -133,9 +137,9 @@
 }
 
 .icon-grid .logo-bg {
-	height: 70px;
-	width: 70px;
-	border-radius: 35px;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
 }
 
 .icon-grid .logo-bg-lg {
@@ -145,9 +149,9 @@
 }
 
 .icon-grid img {
-	height: 35px;
-	width: 35px;
-	margin: 18px;
+	height: 30px;
+	width: 30px;
+	margin: 15px;
 	background-color: white;
 }
 
@@ -173,15 +177,15 @@
 	left: 100px;
 }
 
-.icon-grid .google-a {
+.icon-grid .google-ads {
 	position: relative;
-	left: 125px;
+	left: 155px;
 	bottom: 50px;
 }
 
 .icon-grid .google-a-img {
-	height: 50px;
-	width: 50px;
+	height: 40px;
+	width: 40px;
 	margin: 10px;
 }
 
@@ -775,16 +779,4 @@ footer .container .copyright {
 footer .container .copyright p {
 	text-align: center;
 	font-size: 13px;
-}
-/* Animations */
-@keyframes icon-slide {
-	0% {
-		transform: translateY(15%);
-		opacity: .25;
-	}
-
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
 }
