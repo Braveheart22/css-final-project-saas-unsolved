@@ -2,9 +2,550 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="description" content="CSS Final Project" />
     <title>Saas company</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./CSS/default.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+
+    <script
+      src="https://kit.fontawesome.com/71f08b5e4b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar nav" id="topNav">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          aria-expanded="false"
+          aria-controls="navbarDropdown"
+        >
+          <span>&#9776;</span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/project_logo/logo.svg" alt="Logo" />
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-link">
+            <a href="#" class="selected">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#key-benefits">Features</a>
+          </li>
+          <li class="nav-link">
+            <a href="#why">Learn</a>
+          </li>
+          <li class="nav-link">
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-link">
+            <a href="#hire-us">Hire Us</a>
+          </li>
+          <li class="nav-link btn btn-primary">
+            <a href="#">Buy Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 1st section -->
+    <section class="head">
+      <div class="container">
+        <div class="head-wrapper">
+          <h1>Empowering teams with the freedom</h1>
+          <h4>Own the unlimited power of the web development.</h4>
+          <a href="#" class="btn btn-primary top-button"
+            ><i class="fa-solid fa-circle-play"></i> Play Video</a
+          >
+          <a href="#" class="learnMore">Learn More ></a>
+        </div>
+        <div class="icon-grid">
+          <div class="logo-bg">
+            <img src="./assets/logo_icons/google.png" alt="Google" />
+          </div>
+          <div class="logo-bg-lg atlassian">
+            <img
+              src="./assets/logo_icons/atlassian.png"
+              alt="Atlassian"
+              class="large"
+            />
+          </div>
+          <div class="logo-bg-lg asana">
+            <img
+              src="./assets/logo_icons/asana.png"
+              alt="Asana"
+              class="large"
+            />
+          </div>
+          <div class="logo-bg-lg paypal">
+            <img
+              src="./assets/logo_icons/paypal.jpg"
+              alt="Paypal"
+              class="large"
+            />
+          </div>
+          <div class="logo-bg-lg weave">
+            <img
+              src="./assets/logo_icons/weave.png"
+              alt="Weave"
+              class="large"
+            />
+          </div>
+          <p></p>
+          <div class="logo-bg google-a">
+            <img
+              src="./assets/logo_icons/google-A.png"
+              alt="Google-A"
+              class="google-a-img"
+            />
+          </div>
+          <p></p>
+          <div class="logo-bg-lg calendar">
+            <img
+              src="./assets/logo_icons/calendar.png"
+              alt="Calendar"
+              class="large"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Benefits section -->
+    <section class="key-benefits" id="key-benefits">
+      <div class="container">
+        <div class="benefits-heading">
+          <h2>Key Benefits</h2>
+          <p>Design faster with a growing array of beautiful templates.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <a href="#" class="card-wrapper">
+            <div class="benefits-card">
+              <img src="./assets/icons/responsive.svg" alt="responsive" />
+              <h4>Responsive</h4>
+              <p>
+                Front is an incredibly beautiful, fully responsive, and
+                mobile-first projects on the web.
+              </p>
+              <p class="learnMore">Learn more ></p>
+            </div>
+          </a>
+
+          <a href="#" class="card-wrapper">
+            <div class="benefits-card">
+              <img src="./assets/icons/customizable.svg" alt="customizable" />
+              <h4>Customizable</h4>
+              <p>
+                Front template can be easily customized with its cutting-edge
+                components and features.
+              </p>
+              <p class="learnMore">Learn more ></p>
+            </div>
+          </a>
+
+          <a href="#" class="card-wrapper">
+            <div class="benefits-card">
+              <img src="./assets/icons/premium.svg" alt="premium" />
+              <h4>Premium <span class="sketch">sketch</span></h4>
+              <p>
+                Front is not only for developers but also for designers, and
+                includes a Sketch file
+              </p>
+              <p class="learnMore">Learn more ></p>
+            </div>
+          </a>
+
+          <a href="#" class="card-wrapper">
+            <div class="benefits-card">
+              <img src="./assets/icons/documentation.svg" alt="documentation" />
+              <h4>Documentation</h4>
+              <p>
+                Every component and plugin is well documented with live
+                examples.
+              </p>
+              <p class="learnMore">Learn more ></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Software Section -->
+    <section class="software">
+      <div class="container software-wrapper">
+        <div class="call-to-action">
+          <h3>Front makes you look at things from a different perspectives</h3>
+          <a href="#" class="btn btn-primary getStarted">Get Started ></a>
+        </div>
+        <img
+          class="for-people"
+          src="./assets/banners/banner_one.jpg"
+          alt="banner"
+        />
+      </div>
+    </section>
+
+    <!-- Why Front -->
+    <section class="why-front" id="why">
+      <div class="container">
+        <h2>Why Front?</h2>
+        <p>
+          Front is an incredibly beautiful, fully responsive, and mobile-first
+          projects<br />on the web - it is the starting point for creative
+          sites.
+        </p>
+        <div class="timeline">
+          <div class="circle-element">
+            <div class="circle">
+              <div class="center-circle"></div>
+            </div>
+            <h4 class="labels basicElements">Basic elements</h4>
+          </div>
+          <div class="line-wrapper">
+            <div class="line"></div>
+          </div>
+
+          <div class="circle-element">
+            <div class="circle">
+              <div class="center-circle"></div>
+            </div>
+            <h4 class="labels components">Components</h4>
+          </div>
+          <div class="line-wrapper">
+            <div class="line"></div>
+          </div>
+
+          <div class="circle-element">
+            <div class="circle">
+              <div class="center-circle"></div>
+            </div>
+            <h4 class="labels combined">Combined components</h4>
+          </div>
+          <div class="line-wrapper">
+            <div class="line"></div>
+          </div>
+
+          <div class="circle-element">
+            <div class="circle">
+              <div class="center-circle"></div>
+            </div>
+            <h4 class="labels pageLayout">Page layouts</h4>
+          </div>
+        </div>
+        <div class="video">
+          <a href="#" class="play">
+            <i class="fa-solid fa-play"></i>
+          </a>
+          <img src="./assets/banners/banner_two.jpg" alt="Why Front" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="left-side">
+          <div class="dots-wrapper">
+            <img src="./assets/icons/dots.svg" alt="dots" class="dots" />
+          </div>
+          <div class="christina-wrapper">
+            <img
+              src="./assets/people/woman_three.jpg"
+              alt="Christina"
+              class="christina"
+            />
+          </div>
+        </div>
+        <div class="right-side">
+          <img src="./assets/company_logos/hubspot.svg" alt="Hub Spot" />
+          <p class="quote">
+            The template is really nice and offers quite a large set of options.
+            It's beautiful and the coding is done quickly and seamlessly. Thank
+            you!
+          </p>
+          <h4 class="name">Christina Kray</h4>
+          <p class="title">Executive Director</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted by section -->
+    <section class="trusted-by">
+      <div class="container">
+        <h5 class="trust-title">Trusted by the world's best</h5>
+        <div class="trusted-logos">
+          <img src="./assets/company_logos/weebly.svg" alt="weebly" />
+          <img src="./assets/company_logos/uber.svg" alt="uber" />
+          <img src="./assets/company_logos/slack.svg" alt="slack" />
+          <img src="./assets/company_logos/airbnb.svg" alt="airbnb" />
+          <img src="./assets/company_logos/spotify.svg" alt="spotify" />
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing">
+      <div class="container">
+        <h1 class="pricing-title">Pricing</h1>
+        <p class="pricing-text">No additional costs. Pay for what you use.</p>
+        <div class="pricing-info">
+          <div class="price">
+            <h2>$59</h2>
+            <span>/ mo</span>
+            <hr />
+            <p>
+              Start your Front business now. 100% <br />
+              guaranteed money back. No questions asked.
+            </p>
+            <a href="#" class="btn btn-primary getStarted">Get Started ></a>
+            <p>No credit card required.</p>
+          </div>
+          <div class="price-grid">
+            <div>
+              <img src="./assets/icons/components.svg" alt="components" />
+              <h5>Hundreds of components</h5>
+              <p>
+                Achieve maximum productivity with minimum effort with Front and
+                create robust limitless products.
+              </p>
+            </div>
+
+            <div>
+              <img src="./assets/icons/images.svg" alt="diamond" />
+              <h5>Images Included</h5>
+              <p>
+                We made custom license for all our premium images in the Front.
+              </p>
+            </div>
+
+            <div>
+              <img src="./assets/icons/cancel.svg" alt="tag" />
+              <h5>Cancel Anytime</h5>
+              <p>
+                If its not for you, just cancel, no <br />
+                hidden costs or fees.
+              </p>
+            </div>
+
+            <div>
+              <img src="./assets/icons/moneyback.svg" alt="money bag" />
+              <h5>Money Back</h5>
+              <p>100% guaranteed money back. No questions asked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire us section -->
+    <section class="hire-us" id="hire-us">
+      <div class="container">
+        <div class="hire-us-testimonials">
+          <h1>Hire us</h1>
+          <p>Whatever your goal - we will get you there.</p>
+          <hr />
+          <h3>
+            "It's beautiful and the coding is done quickly and seamlessly. Keep
+            it up!"
+          </h3>
+          <p class="credit">James Austin</p>
+          <p class="job">Executive Creative Director, HubSpot</p>
+          <div class="avatars">
+            <img src="./assets/people/woman_one.jpg" alt="Woman 1" />
+            <img src="./assets/people/man_one.jpg" alt="Man 1" class="focus" />
+            <img src="./assets/people/woman_two.jpg" alt="Woman 2" />
+          </div>
+        </div>
+        <div class="hire-us-form">
+          <h2>Fill out the form and we'll be in touch as soon as possible.</h2>
+          <div class="field-grid">
+            <input
+              type="text"
+              id="firstName "
+              name="firstName"
+              placeholder="First name"
+            />
+            <input
+              type="text"
+              id="lastName "
+              name="lastName"
+              placeholder="Last name"
+            />
+            <input
+              type="email"
+              id="email "
+              name="email"
+              placeholder="Work email"
+            />
+            <input
+              type="text"
+              id="website"
+              name="website"
+              placeholder="Company website"
+            />
+            <select id="budget" name="budget">
+              <option value="budget">Budget</option>
+            </select>
+            <select id="country" name="country">
+              <option value="country">Country</option>
+            </select>
+          </div>
+          <textarea
+            name="more"
+            id="more"
+            cols="30"
+            rows="10"
+            placeholder="Tell us more about your project, needs, and timeline."
+          ></textarea
+          ><br />
+          <input
+            type="checkbox"
+            id="opt-in"
+            name="opt-in"
+            value="opt-in"
+            checked
+          />
+          <label for="opt-in"
+            >Yes, I'd like to receive occasional marketing emails from Front. I
+            have the right to opt out at any time.
+            <a href="#">View privacy policy.</a> </label
+          ><br />
+          <button class="btn btn-primary getStarted">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col">
+            <img src="./assets/project_logo/logo.svg" alt="logo" />
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-arrow"></i>153 Williamson Plaza,
+                Maggieberg
+              </li>
+              <li><i class="fa-solid fa-phone"></i>+1 (062) 109-9222</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li>
+                <a href="#">Careers <span class="hiring">We're hiring</span></a>
+              </li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Hire us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Features</h5>
+            <ul>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Release notes</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Documentation</h5>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">API reference</a></li>
+              <li><a href="#">Technical Requirements</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <ul>
+              <li>
+                <i class="fa-sharp fa-solid fa-circle-info"></i
+                ><a href="#">Help</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-user"></i
+                ><a href="#">Your account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-links">
+          <div class="left-links">
+            <ul>
+              <li><a href="#">Privacy & Policy</a></li>
+              <li>/</li>
+              <li><a href="#">Terms</a></li>
+              <li>/</li>
+              <li><a href="#">Site map</a></li>
+            </ul>
+          </div>
+
+          <div class="right-links">
+            <ul>
+              <li><i class="fa-brands fa-facebook-f"></i></li>
+              <li><i class="fa-brands fa-google"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-github"></i></li>
+              <li>
+                <select id="language" name="language">
+                  <option>United States</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&#169; Front. 2020 Htmlstream. All rights reserved.</p>
+          <p>
+            When you visit or interact with our sites, services or tools, we or
+            our authorized service providers may use cookies for storing
+            information to help provide you with a better, faster, and safer
+            experience and for marketing purposes
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
+  </body>
 </html>
