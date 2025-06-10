@@ -1,10 +1,11 @@
 :root {
     --white: #FFF;
     --black: #000;
+    --front-blue: #2476ff;
     --font-color-base: #666;
     --font-color-dark: #212529;
     --font-color-link: #57A6FF;
-    --font-color-light: #B0AEBE;
+    --font-color-light: #677788;
     --footer: #34314b;
     --footer-base: #2E2B45;
     --contrast: var(--font-color-light);
@@ -94,16 +95,22 @@ hr {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: 7px 25px;
+    padding: 15px 25px;
     border-radius: 50px;
     transition: ease-in-out 0.3s;
 }
 
 .btn-primary,
 .btn-primary:hover {
-    background: #3379ff;
+    background: var(--front-blue);
     color: var(--white);
-    padding: 10px 15px;
+    padding: 15px 25px;
+}
+
+.btn-primary:hover {
+    background: var(--white);
+    color: var(--front-blue);
+    padding: 15px 25px;
 }
 
 @media (min-width: 1200px) {

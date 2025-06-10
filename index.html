@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -53,10 +57,8 @@
           <li class="nav-link">
             <a href="#hire-us">Hire Us</a>
           </li>
-          <li class="nav-link btn btn-primary">
-            <a href="#">Buy Now</a>
-          </li>
         </ul>
+        <a href="#" class="btn btn-primary">Buy Now</a>
       </div>
     </nav>
 
@@ -168,18 +170,22 @@
         <p class="pricing-text">No additional costs. Pay for what you use.</p>
         <div class="pricing-info">
           <div class="price">
-            <h2>$59</h2>
-            <span>/ mo</span>
-            <hr />
-            <p>
-              Start your Front business now. 100% <br />
-              guaranteed money back. No questions asked.
-            </p>
+            <div class="price-info">
+              <div class="cost">
+                <h2>59</h2>
+                <span>/ mo</span>
+              </div>
+              <div class="divider"></div>
+              <p>
+                Start your Front business now. 100% <br />
+                guaranteed money back. No questions asked.
+              </p>
+            </div>
             <a href="#" class="btn btn-primary getStarted">Get Started ></a>
             <p>No credit card required.</p>
           </div>
           <div class="price-grid">
-            <div>
+            <div class="price-grid-element">
               <img src="./assets/icons/components.svg" alt="components" />
               <h5>Hundreds of components</h5>
               <p>
@@ -188,15 +194,16 @@
               </p>
             </div>
 
-            <div>
+            <div class="price-grid-element">
               <img src="./assets/icons/images.svg" alt="diamond" />
               <h5>Images Included</h5>
               <p>
-                We made custom license for all our premium images in the Front.
+                Images included. We made custom license for all our premium
+                images in the front.
               </p>
             </div>
 
-            <div>
+            <div class="price-grid-element">
               <img src="./assets/icons/cancel.svg" alt="tag" />
               <h5>Cancel Anytime</h5>
               <p>
@@ -205,7 +212,7 @@
               </p>
             </div>
 
-            <div>
+            <div class="price-grid-element">
               <img src="./assets/icons/moneyback.svg" alt="money bag" />
               <h5>Money Back</h5>
               <p>100% guaranteed money back. No questions asked.</p>

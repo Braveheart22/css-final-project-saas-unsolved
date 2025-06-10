@@ -58,8 +58,8 @@
 	color: #6a7988;
 	margin-right: auto;
 	font-family: "Inter", sans-serif;
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: 700;
+	font-size: 12px;
 }
 .nav-link a.selected {
 	color: #3379ff;
@@ -75,6 +75,7 @@
 .head {
 	background-image: url(../assets/bg/background-top.svg);
 	padding: 150px;
+	height: 517px;
 }
 
 .btn-primary i {
@@ -85,26 +86,27 @@
 	display: flex;
 }
 .head-wrapper {
-	width: 350px;
+	width: 334px;
 }
 
 .head-wrapper h1 {
-	font-size: 50px;
-	font-weight: 600;
+	font-size: 40px;
+	font-weight: 500;
 	color: black;
 	margin-bottom: 10px;
-	line-height: 55px;
+	line-height: 100%;
 }
 
 .head-wrapper h4 {
 	margin-top: 0px;
 	margin-bottom: 30px;
-	font-size: 19px;
-	color: #6c7c8c;
+	font-size: 14px;
+	font-weight: 500;
+	color: #677788;
 }
 
 .top-button {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .learnMore {
@@ -143,9 +145,9 @@
 }
 
 .icon-grid .logo-bg-lg {
-	height: 90px;
-	width: 90px;
-	border-radius: 45px;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
 }
 
 .icon-grid img {
@@ -156,20 +158,18 @@
 }
 
 .icon-grid img.large {
-	height: 46px;
-	width: 46px;
-	margin: 22px;
+	height: 48px;
+	width: 48px;
+	margin: 16px;
 }
 
 .icon-grid .atlassian {
 	position: relative;
-	top: 40px;
 }
 
 .icon-grid .asana {
 	position: relative;
-	top: 12px;
-	left: 50px;
+	left: 80px;
 }
 
 .icon-grid .weave {
@@ -179,8 +179,8 @@
 
 .icon-grid .google-ads {
 	position: relative;
-	left: 155px;
-	bottom: 50px;
+	left: 145px;
+	bottom: 30px;
 }
 
 .icon-grid .google-a-img {
@@ -291,12 +291,24 @@
 	width: 800px;
 }
 
+.why-front .container {
+	padding-top: 25px;
+}
+
 .why-front h2,
 .why-front p {
 	text-align: center;
 }
 
+.why-front h2 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
 .why-front p {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
 	margin-bottom: 80px;
 }
 
@@ -312,26 +324,38 @@
 }
 
 .labels.basicElements {
-	margin-left: -12px;
+	margin-left: -32px;
 }
 
 .labels.components {
-	margin-left: -4px;
+	margin-left: -25px;
 }
 
 .labels.combined {
-	margin-left: -43px;
+	margin-left: -64px;
 }
 
 .labels.pageLayout {
-	margin-left: -3px;
+	margin-left: -18px;
+}
+
+.reason {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.circle-row {
+	display: flex;
+	align-items: center;
 }
 
 .circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 20px;
+	margin: 0 5px;
 	background: #e9f2ff;
 	width: 50px;
 	height: 50px;
@@ -340,16 +364,16 @@
 
 .center-circle {
 	background: #568eff;
-	width: 4px;
-	height: 4px;
-	border-radius: 2px;
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
 }
 
 .line-wrapper {
 	display: flex;
 	align-items: center;
 	height: 50px;
-	width: 125px;
+	width: 166px;
 }
 
 .line {
@@ -463,46 +487,55 @@
 
 .pricing-title {
 	color: black;
-	font-size: 40px;
+	font-size: 26px;
+	font-weight: 700;
 	margin-top: 120px;
 	margin-bottom: 0px;
 }
 
 .pricing-text {
 	font-size: 16px;
-	font-weight: 900;
-	color: #B0AEBE;
+	font-weight: 500;
+	color: #677788;
 }
 
 .pricing-info {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); */
+	grid-template-columns: 370px 1fr;
+	column-gap: 100px;
 	margin-top: 100px;
-}
-
-.pricing-info p {
-	text-align: left;
-	font-size: 15px;
-	font-weight: 600;
-	color: #B0AEBE;
-	padding-right: 10px;
+	margin-left: 70px;
+	margin-right: 70px;
 }
 
 .price {
 	text-align: left;
-	padding: 50px;
+	padding: 30px;
 	box-shadow: 0 15px 20px 1px rgba(128, 128, 128, 0.25);
-	max-width: 450px;
+	max-width: 370px;
 }
 
-.price span {
+.price-info {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.price-info span {
 	font-size: 18px;
-	color: black;
+	color: 677788;
 }
 
-.price h2 {
+.price-info h2 {
 	font-size: 50px;
+	font-weight: 500;
 	display: inline;
+}
+
+.divider {
+	height: 1px;
+	background-color: #8d8d8d;
 }
 
 .price p {
@@ -527,16 +560,31 @@
 	gap: 10px;
 }
 
+.price-grid-element {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .price-grid img {
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 }
 
 .price-grid h5 {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 18px;
+	color: black;
 	margin-top: 15px;
 	margin-bottom: 5px;
+}
+
+.price-grid-element p {
+	text-align: left;
+	font-size: 14px;
+	font-weight: 500;
+	color: #677788;
+	padding-right: 10px;
 }
 
 .hire-us {
