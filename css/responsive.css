@@ -1,71 +1,71 @@
 /* iPads and Tablets */
 @media screen and (max-width: 768px) {
-    [aria-controls="navbarDropdown"] {
-            display: block;
-        }
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
 
-    	[aria-expanded="false"]~ul {
-    	    display: none;
-    	}
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
 
-    	[aria-expanded="true"]~ul {
-    	    display: block;
-    	    position: absolute;
-    	    right: 0;
-    	    top: 50px;
-    	    text-align: right;
-    	}
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    text-align: right;
+  }
 
-    	[aria-expanded="true"]~ul li a,
-    	[aria-expanded="true"]~ul li .selected {
-    	    margin-right: 20px;
-    	}
+  [aria-expanded="true"] ~ ul li a,
+  [aria-expanded="true"] ~ ul li .selected {
+    margin-right: 20px;
+  }
 
-    	.icon-grid .google-a {
-    	    display: none;
-    	}
+  .icon-grid .google-a {
+    display: none;
+  }
 
-    	.icon-grid .calendar {
-    	    display: none;
-    	}
+  .icon-grid .calendar {
+    display: none;
+  }
 
-    	.head .container {
-    	    display: block;
-    	}
+  .head .container {
+    display: block;
+  }
 
-    	.icon-grid {
-    	    margin-top: 20px;
-    	}
-    	.head {
-    	    padding: 150px 150px 0px 150px;
-    	}
-    
-    	.head-wrapper {
-    	    width: auto;
-    	}
-    
-    	.icon-grid {
-    	    margin-top: 60px;
-    	}
-    
-    	.key-benefits {
-    	    padding: 0 100px;
-    	}
-    
-    	.software {
-    	    padding: 0px 80px;
-    	}
-    
-    	.software-wrapper {
-    	    padding-top: 40px;
-    	}
-    
-    	.software-wrapper .for-people {
-    	    margin-top: 70px;
-    	}
-    
-    	.call-to-action {
-    	    width: 530px;
-    	    margin-left: 20px;
-    	}
+  .icon-grid {
+    margin-top: 20px;
+  }
+  .head {
+    padding: 150px 150px 0px 150px;
+  }
+
+  .head-wrapper {
+    width: auto;
+  }
+
+  .icon-grid {
+    margin-top: 60px;
+  }
+
+  .key-benefits {
+    padding: 0 100px;
+  }
+
+  .software {
+    padding: 0px 80px;
+  }
+
+  .software-wrapper {
+    padding-top: 40px;
+  }
+
+  .software-wrapper .for-people {
+    margin-top: 70px;
+  }
+
+  .call-to-action {
+    width: 530px;
+    margin-left: 20px;
+  }
 }
