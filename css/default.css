@@ -97,7 +97,7 @@ hr {
   cursor: pointer;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid var(--front-blue);
   padding: 15px 25px;
   border-radius: 50px;
   transition: ease-in-out 0.3s;
